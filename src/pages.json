@@ -2,6 +2,13 @@
   "pages": [
     { "path": "/", "name": "Home", "folder": "/", "imageCount": 0 },
     {
+      "path": "/tsvetkov",
+      "name": "andrey tsvetkov",
+      "folder": "tsvetkov",
+      "href": "https://www.instagram.com/andrey.tsvetkov?igsh=anVmeHBiMWxpM3Q1",
+      "imageCount": 39
+    },
+    {
       "path": "/pierrotkaligula",
       "name": "pierrotkaligula",
       "folder": "pierrotkaligula",
