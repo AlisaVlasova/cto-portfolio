@@ -1,0 +1,29 @@
+{
+  "pages": [
+    { "path": "/", "name": "Home", "folder": "/", "imageCount": 0 },
+    {
+      "path": "/acid-poke",
+      "name": "Acid Poke",
+      "folder": "/acid-poke",
+      "imageCount": 29
+    },
+    {
+      "path": "/usernamewillbeunspecified",
+      "name": "usernamewillbeunspecified",
+      "folder": "/usernamewillbeunspecified",
+      "imageCount": 14
+    },
+    {
+      "path": "/pierrotkaligula",
+      "name": "pierrotkaligula",
+      "folder": "/pierrotkaligula",
+      "imageCount": 39
+    },
+    {
+      "path": "/katya-kopeikina",
+      "name": "katya kopeikina",
+      "folder": "/katya-kopeikina",
+      "imageCount": 31
+    }
+  ]
+}
