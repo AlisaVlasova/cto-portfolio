@@ -6,10 +6,13 @@ import Header from "./components/Header";
 
 import './index.css';
 
+const base = import.meta.env.BASE_URL;
+const src = `${base}/image.jpeg`;
+
 const Home: React.FC = () => (
   <div className="home">
     <div className="home-inner">
-      <img src="/image.png" className="home-logo" alt="" />
+      <img src={src} className="home-logo" alt="" />
       <ul className="home-links">
         {pages.filter(p => p.path !== '/').map(p => (
           <li key={p.path}>
