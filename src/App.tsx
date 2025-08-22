@@ -7,7 +7,7 @@ import Header from "./components/Header";
 import './index.css';
 
 const base = import.meta.env.BASE_URL;
-const src = `${base}/image.jpeg`;
+const src = `${base}/image.png`;
 
 const Home: React.FC = () => (
   <div className="home">
@@ -41,7 +41,7 @@ const ImageCard: React.FC<{ src: string; onClick?: () => void }> = ({ src, onCli
 };
 
 const ImageGrid: React.FC<{ folder: string; imageCount: number }> = ({ folder, imageCount }) => {
-  // const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
+// const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
 // було: `${folder}/img${i + 1}.png` або з лідинг /
 // стало (під .jpeg після нормалізації і з base):
 const base = import.meta.env.BASE_URL;

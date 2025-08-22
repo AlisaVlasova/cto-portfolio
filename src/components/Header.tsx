@@ -1,12 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
 import { FaHome, FaInstagram } from "react-icons/fa";
-import { pages } from "../pages"; // твій масив сторінок
+import { pages } from "../pages";
 import "./Header.css";
 
 export default function Header() {
   const location = useLocation();
   const currentPage =
     pages.find((p) => p.path === location.pathname) || pages[0];
+  
+  const currentHref =
+    pages.find((p) => p.path === location.pathname)?.href || pages[0]?.href || '';
 
   return (
     <header className="header">
@@ -18,7 +21,7 @@ export default function Header() {
         <div className="nav-right">
           <span className="name">{currentPage.name}</span>
           <a
-            href="https://www.instagram.com/garnajinka"
+            href={currentHref}
             target="_blank"
             rel="noreferrer"
           >
