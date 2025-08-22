@@ -39,7 +39,10 @@ const ImageCard: React.FC<{ src: string; onClick?: () => void }> = ({ src, onCli
 
 const ImageGrid: React.FC<{ folder: string; imageCount: number }> = ({ folder, imageCount }) => {
   // const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
-  const images = Array.from({ length: imageCount }, (_, i) => `${folder}/img${i + 1}.jpeg`);
+// було: `${folder}/img${i + 1}.png` або з лідинг /
+// стало (під .jpeg після нормалізації і з base):
+const base = import.meta.env.BASE_URL;
+const images = Array.from({ length: imageCount }, (_, i) => `${base}${folder}/img${i + 1}.jpeg`);
 
   return (
     <main className="main">

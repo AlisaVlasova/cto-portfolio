@@ -9,6 +9,7 @@
     "normalize-images": "node scripts/normalize-images.js",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run normalize-images && tsc -b && vite build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
